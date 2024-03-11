@@ -18,4 +18,6 @@ def post_save_create_profile_receiver(sender, instance, created, **kwargs):
 
 @receiver(pre_save, sender=User)
 def pre_save_profile_receiver(sender, instance, **kwargs):
-    print(instance.username, "this user is being saved")
+    # print(instance.username, "this user is being saved")
+    # Incase I want to do something before user is saved
+    pass

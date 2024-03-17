@@ -53,7 +53,7 @@ def registerUser(request):
 
             # Send verification email
             mail_subject = "Please activate your account"
-            mail_template = "accounts/emails/account_vefication_email.html"
+            mail_template = "accounts/emails/account_verification_email.html"
 
             send_verification_email(request, user, mail_subject, mail_template)
 
@@ -104,7 +104,7 @@ def registerVendor(request):
 
             # Send verification email
             mail_subject = "Please activate your account"
-            mail_template = "accounts/emails/account_vefication_email.html"
+            mail_template = "accounts/emails/account_verification_email.html"
 
             send_verification_email(request, user, mail_subject, mail_template)
 

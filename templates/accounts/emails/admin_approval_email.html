@@ -1,0 +1,8 @@
+{% autoescape off %}
+    Hi {{ user.first_name }} {{ user.last_name }},
+    {% if is_approved %}
+        Congratulations! Your restuarant has been approved by our admin team. --EatWithHitz
+    {% else %}
+        We are sorry! Your are not eligible for publishing your food menu on our marketplace. For more details, please contact support@eatwithitz.com. --EatWithHitz
+    {% endif %}
+{% endautoescape %}
